@@ -1,0 +1,5 @@
+npm install typescript -D
+npm run tsc -- --init
+npm install express -E
+npm install @types/express -D
+npm install ts-node-dev -D

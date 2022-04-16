@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "emotion": "happy",
+        "visibility": "1",
+        "comment": "Cometario 1",
+        "date": "2019-06-07"
+    },
+    {
+        "id": 2,
+        "emotion": "sad",
+        "visibility": "1",
+        "comment": "Cometario 2",
+        "date": "2019-07-07"
+    },
+    {
+        "id": 3,
+        "emotion": "very happy",
+        "visibility": "1",
+        "comment": "Cometario 3",
+        "date": "2020-04-07"
+    },
+    {
+        "id": 4,
+        "emotion": "happy",
+        "visibility": "0",
+        "comment": "Cometario 4",
+        "date": "2021-01-04"
+    }
+]

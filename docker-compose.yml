@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  web:
+    build:    
+      context: ./
+      dockerfile: Dockerfile
+    container_name: express_ts
+    restart: always
+    ports:
+      - 8101:8101
+    networks:
+        backend-net:
+            ipv4_address: 20.2.111.8
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run start
+    env_file:
+      - .env
+
+networks:
+    backend-net:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet: 20.2.111.0/26
